@@ -5,4 +5,4 @@ import 'bootstrap' // se quiser também o JS (dropdown, modal, tooltip etc.)
 import router from './router'
 
 
-createApp(App).use(router).mount('#app')
+window.app = createApp(App).use(router).mount('#app')
