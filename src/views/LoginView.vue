@@ -10,10 +10,14 @@ export default {
   name: "LoginView",
   data() {
     return {
+      
     };
   },
   components: {
     LoginForms,
   }
+
+
+
 };
 </script>
