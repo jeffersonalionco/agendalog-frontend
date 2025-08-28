@@ -1,5 +1,5 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import HomeView from '../views/HomeView.vue';
 
 const routes = [
   {
@@ -36,10 +36,6 @@ router.beforeEach((to, from, next) =>{
 
 
   const isLogged = localStorage.getItem("user") !== null;
-  
-  // const user = localStorage.getItem("user")
-  // const tokenDecoded = jwt.verify(user.token, 'SDFBHHLASDGFÇUIHIU4325UIDSF')      /// implementar ainda
-  // console.log(tokenDecoded)
 
   if(to.meta.requiresAuth && !isLogged){
     return next('/login')

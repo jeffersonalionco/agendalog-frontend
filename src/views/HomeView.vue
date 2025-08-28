@@ -1,12 +1,10 @@
 <template>
   <!-- Aqui fazemos a verificação se o usuario fez login, continua, para as demais paginas-->
-  <div
-  v-if="checkLogin() === true">
+ 
     
   
   <menuDefault ></menuDefault>
 
-  </div>
 
 </template>
 
