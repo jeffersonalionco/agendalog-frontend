@@ -1,7 +1,7 @@
 # app
 
 
-É necessário configurar corretamente a comunicação com o backend para realizar requisições às rotas de login e às demais funcionalidades do SaaS que está sendo desenvolvido, garantindo segurança, eficiência e integração adequada entre as camadas do sistema.
+É necessário configurar corretamente a comunicação com o backend para realizar requisições às rotas de login e às demais funcionalidades do SaaS que está sendo desenvolvido, garantindo segurança, eficiência e integração adequada entre as camadas do sistema. [PROJETO BACKEND](https://github.com/jeffersonalionco/agendalog-backend.git)
 
 
 ## Project setup
