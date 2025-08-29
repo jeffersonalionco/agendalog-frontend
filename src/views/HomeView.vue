@@ -1,6 +1,6 @@
 <template>
   <!-- Verificação se o usuário está logado -->
-  <div v-if="checkLogin() === true">
+  <div>
 
     <!-- Menu fixo no topo -->
     <menuDefault></menuDefault>
@@ -54,10 +54,7 @@ export default {
   name: 'HomeView',
   components: { menuDefault },
   methods: {
-    checkLogin() {
-      // Simulação de login
-      return true
-    }
+    
   }
 }
 </script>
