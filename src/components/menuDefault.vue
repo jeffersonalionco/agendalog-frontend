@@ -4,7 +4,9 @@
     <div class="container-fluid">
 
       <!-- LOGO DO PROJETO -->
-      <a class="navbar-brand" href="#">LOGO AGENDA LOG</a>
+      <a class="navbar-brand " href="#">
+        <img src="../assets/logo.png" alt="Logo do Projeto" class="logo-navbar">
+      </a>
 
 
       <!-- BOTAO SANDUICHE É ACIONADO-->
@@ -36,14 +38,18 @@
         </ul>
       </div>
 
+
+      <!--Configurações do Usuario-->
       <ul class="navbar-nav">
         <li class="nav-item">
           <a class="nav-link">Configurações</a>
         </li>
 
       </ul>
+
+      <!--PROFILE DO USUARIO-->
       <img
-        src="https://img.logo.dev/mercedes-benz.com?token=live_6a1a28fd-6420-4492-aeb0-b297461d9de2&size=100&retina=true"
+        src="../assets/perfil.png"
         class="rounded-circle logoC1" alt="Logo">
     </div>
   </nav>
@@ -71,5 +77,11 @@
 
 .logoC1 {
   height: 80px;
+}
+.logo-navbar {
+  height: 100%;         /* Faz a imagem ocupar toda a altura da navbar */
+  max-height: 80px;     /* Define um limite (ajuste conforme o tamanho da navbar) */
+  width: auto;          /* Mantém a proporção da imagem */
+  object-fit: contain;  /* Garante que a logo não distorça */
 }
 </style>

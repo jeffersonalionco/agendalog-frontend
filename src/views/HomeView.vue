@@ -18,13 +18,8 @@
             </div>
 
             <!-- Corpo do card -->
-            <div class="card-body bg-light">
-              <h6 class="card-title">Título de exemplo</h6>
-              <p class="card-text">
-                Descrição de exemplo do pedido. Aqui você pode colocar informações rápidas.
-              </p>
-              <button class="btn btn-primary btn-sm">Detalhes</button>
-            </div>
+            <CardDefault></CardDefault>
+            
           </div>
         </div>
 
@@ -59,11 +54,12 @@
 
 <script>
 // @ is an alias to /src
+import CardDefault from '@/components/cardDefault.vue';
 import menuDefault from '@/components/menuDefault.vue'
 
 export default {
   name: 'HomeView',
-  components: { menuDefault },
+  components: { menuDefault, CardDefault },
   methods: {
 
   }
