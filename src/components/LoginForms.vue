@@ -16,11 +16,11 @@
           <input type="checkbox" class="form-check-input" id="exampleCheck1">
           <label class="form-check-label" for="exampleCheck1">Aceita os Termos</label>
         </div>
-        <div class="form-text errorLogin" v-if="errorLogin" >Usuário ou Senha inválida!</div>
+        <div class="form-text errorLogin" :class="typeError" v-if="errorLogin"> {{ msgErro }}</div>
         <button type="submit" class="btn btn-primary w-100">Login</button>
       </form>
-      
-      
+
+
     </div>
 
   </div>
@@ -36,6 +36,7 @@ export default {
     return {
       inputEmail: null,
       inputPassword: null,
+      msgErro: 'Usuário ou Senha inválida!',
       errorLogin: false,
     }
   },
@@ -67,7 +68,7 @@ export default {
         this.errorLogin = false;
 
       } catch (err) {
-        this.errorLogin = true,
+        this.errorLogin = true;
         alert("Inicio error" + err)
         this.error = err.message;
       } finally {
@@ -87,9 +88,12 @@ export default {
 <!-- Todo arquivo css ou STYLE do elemento será escrito aqui-->
 <style scoped>
 .errorLogin {
-   background-color: #f8d7da;   /* vermelho claro */
-  color: #721c24;              /* vermelho escuro (texto) */
-  border: 1px solid #f5c6cb;   /* borda suave */
+  background-color: #f8d7da;
+  /* vermelho claro */
+  color: #721c24;
+  /* vermelho escuro (texto) */
+  border: 1px solid #f5c6cb;
+  /* borda suave */
   padding: 12px 16px;
   margin-bottom: 10px;
   border-radius: 6px;
@@ -97,6 +101,7 @@ export default {
   font-size: 14px;
   text-align: center;
   margin-top: 10px;
-  box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
 }
+
 </style>
