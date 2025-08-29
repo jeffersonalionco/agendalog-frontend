@@ -8,7 +8,7 @@
     <!-- Container principal da Home -->
     <div class="container-fluid mt-4">
       <div class="row">
-        
+
         <!-- Coluna da esquerda (cards de pedidos) -->
         <div class="col-md-4 border-end pe-3">
           <div class="card border-0 shadow-sm rounded-3 mb-4">
@@ -32,7 +32,18 @@
         <div class="col-md-8">
           <div class="card border-0 shadow-sm rounded-3 mb-4">
             <div class="card-header bg-info text-white rounded-top">
-              <h5 class="mb-0">Informações adicionais</h5>
+              <!--<h5 class="mb-0">Informações adicionais</h5>-->
+              <nav class="navbar navbar-expand-lg">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Pedidos</a>
+                  </li>
+
+                </ul>
+              </nav>
             </div>
             <div class="card-body bg-light">
               <p class="card-text">Aqui você pode renderizar outro componente ou exibir dados dinâmicos.</p>
@@ -54,7 +65,7 @@ export default {
   name: 'HomeView',
   components: { menuDefault },
   methods: {
-    
+
   }
 }
 </script>
