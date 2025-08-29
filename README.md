@@ -1,5 +1,9 @@
 # app
 
+
+É necessário configurar corretamente a comunicação com o backend para realizar requisições às rotas de login e às demais funcionalidades do SaaS que está sendo desenvolvido, garantindo segurança, eficiência e integração adequada entre as camadas do sistema.
+
+
 ## Project setup
 ```
 npm install
@@ -19,6 +23,7 @@ npm run build
 ```
 npm run lint
 ```
+
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
