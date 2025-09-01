@@ -20,10 +20,10 @@
       <div class="collapse navbar-collapse c2" id="menu-principal">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <router-link class="nav-link active" aria-current="page" :to="'/'">Home</router-link>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Pedidos</a>
+            <router-link class="nav-link" :to="'/pedidos'">Pedidos</router-link>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">

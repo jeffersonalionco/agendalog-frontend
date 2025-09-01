@@ -34,6 +34,12 @@ const routes = [
     name: 'login',
     component: () => import('../views/LoginView.vue'),
 
+  },
+  {
+    path: '/pedidos',
+    name: 'pedidos',
+    component: () => import('../views/PedidosView.vue'),
+    meta: { requiresAuth: true}
   }
 ]
 
@@ -75,7 +81,7 @@ if(to.meta.requiresAuth){
     localStorage.removeItem("user");
     return next(
       {
-        path: 'login',
+        path: '/login',
         query: { error: true, type: 'isTokenExpirado', msgError: "Tempo Expirado, faça login Novamente...." }
 
       })

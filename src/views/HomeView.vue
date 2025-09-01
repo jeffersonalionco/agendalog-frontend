@@ -2,73 +2,37 @@
   <!-- Verificação se o usuário está logado -->
   <div>
 
-    <!-- Menu fixo no topo -->
+    <!-- Menu fixo no topo para todas as paginas -->
     <menuDefault></menuDefault>
 
-    <!-- Container principal da Home -->
-    <div class="container-fluid mt-4">
-      <div class="row">
-
-        <!-- Coluna da esquerda (cards de pedidos) -->
-        <div class="col-md-4 border-end pe-3">
-          <div class="card border-0 shadow-sm rounded-3 mb-4">
-            <!-- Cabeçalho -->
-            <div class="card-header bg-primary text-white rounded-top">
-              <h5 class="mb-0">LISTA DE PEDIDOS</h5>
-            </div>
-
-            <!-- Corpo do card -->
-            <CardDefault></CardDefault>
-            
-          </div>
-        </div>
-
-        <!-- Coluna da direita (outros dados / componentes) -->
-        <div class="col-md-8">
-          <div class="card border-0 shadow-sm rounded-3 mb-4">
-            <div class="card-header bg-info text-white rounded-top">
-              <!--<h5 class="mb-0">Informações adicionais</h5>-->
-              <nav class="navbar navbar-expand-lg">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Pedidos</a>
-                  </li>
-
-                </ul>
-              </nav>
-            </div>
-            <div class="card-body bg-light">
-              <p class="card-text">Aqui você pode renderizar outro componente ou exibir dados dinâmicos.</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
+    <!-- Criei uma estrutura padrao, para as paginas-->
+    <estruturaBody :cards_components="CardDefault"></estruturaBody>
+   
 
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import CardDefault from '@/components/cardDefault.vue';
 import menuDefault from '@/components/menuDefault.vue'
+import estruturaBody from '@/components/estruturaBody.vue';
+import CardDefault from '@/components/cardDefault.vue';
 
 export default {
   name: 'HomeView',
-  components: { menuDefault, CardDefault },
+  components: { menuDefault, estruturaBody},
   methods: {
 
+  },
+  data(){
+    return {
+      CardDefault
+    }
   }
 }
 </script>
 
 <style scoped>
 /* só para dar uma suavizada no layout */
-.container-fluid {
-  padding: 20px;
-}
+
 </style>
